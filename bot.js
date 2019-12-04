@@ -2,7 +2,6 @@ const discord = require("discord.js");
 const fs = require("fs");
 const botconfig = require("./botconfig.json");
 const got = require('got');
-const { Util } = require('discord.js')
 const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
 const Client = new Discord.Client();
