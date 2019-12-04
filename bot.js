@@ -1,12 +1,11 @@
-const Discord = require("discord.js");
-const fs = require("fs");
+const Discord = require('discord.js');
+const fs = require('fs');
 const { Util } = require('discord.js');
-const botconfig = require("./botconfig.json");
+const botconfig = require('./botconfig.json');
 const got = require('got');
 const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
 const Client = new Discord.Client();
-require('./music.js')(Client);
 
 const PREFIX = '~';
 
