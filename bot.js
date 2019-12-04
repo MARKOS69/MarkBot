@@ -8,8 +8,6 @@ const ytdl = require('ytdl-core');
 const Client = new Discord.Client();
 require('./music.js')(Client);
 
-const token = 'Bot token';
-
 const PREFIX = '~';
 
 
