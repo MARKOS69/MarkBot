@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const fs = require("fs");
+const fs = require('fs');
 const botconfig = require("./botconfig.json");
 const got = require('got');
 const YouTube = require('simple-youtube-api');
