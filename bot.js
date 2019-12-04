@@ -1,4 +1,4 @@
-const discord = require("discord.js");
+const Discord = require("discord.js");
 const fs = require("fs");
 const botconfig = require("./botconfig.json");
 const got = require('got');
