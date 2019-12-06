@@ -1,12 +1,14 @@
 const Discord = require("discord.js");
 const fs = require("fs");
-const got = require('got');
 const botconfig = require("./botconfig.json");
+const got = require('got');
 const { Util } = require('discord.js')
 const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
 const Client = new Discord.Client();
+require('./music.js')(Client);
 
+const token = 'NTgwMDc1MDIyMDA2MDkxNzkw.XOLcJQ.sCqFJtOIs4Mg8IwpKNmTS6JMdLs';
 
 const PREFIX = '~';
 
@@ -1045,7 +1047,20 @@ if (args[0] === 'remove' || args[0] === 'r') {
     message.channel.send(embed);
   }
 
+  if(command === "invite") {
+      const embed = new Discord.RichEmbed()
+      .setTitle(`Interested in adding me to your server?Try me out!`)
+      .setThumbnail(Client.user.displayAvatarURL)
+      .setDescription(`[Invite](https://discordapp.com/oauth2/authorize?client_id=580075022006091790&scope=bot&permissions=8)`)
+      .setColor('RANDOM')
+      .setFooter(`${Client.user.username} 2019`)
+      .setTimestamp()
+      
+      message.channel.send(embed);
+    }
+
 
 });
+
 
 client.login(process.env.BOT_TOKEN);
