@@ -6,7 +6,6 @@ const { Util } = require('discord.js')
 const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
 const Client = new Discord.Client();
-require('./music.js')(Client);
 
 
 const PREFIX = '~';
